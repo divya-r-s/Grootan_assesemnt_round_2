@@ -50,7 +50,7 @@ server.listen(3000, function () {
  	MongoClient.connect(url, { useNewUrlParser: true ,useUnifiedTopology: true }, (err, db) => {
  	  if (err) throw err;
  	  var dbo = db.db("data");
- 	  dbo.collection("emp2").insertMany(jsonObj, (err, res) => {
+ 	  dbo.collection("details").insertMany(jsonObj, (err, res) => {
  		if (err) throw err;
  		console.log("Number of documents inserted: " + res.insertedCount);
 
