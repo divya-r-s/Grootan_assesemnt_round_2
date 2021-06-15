@@ -45,13 +45,6 @@ server.listen(3000, function () {
  .then((jsonObj)=>{
     console.log(jsonObj);
 
- 		[ 
- 		  { _id: '1', name: 'Jack Smith', address: 'Massachusetts', age: '23' },
- 		  { _id: '2', name: 'Adam Johnson', address: 'New York', age: '27' },
- 		  { _id: '3', name: 'Katherin Carter', address: 'Washington DC', age: '26' },
- 		  { _id: '4', name: 'Jack London', address: 'Nevada', age: '33' },
- 		  { _id: '5', name: 'Jason Bourne', address: 'California', age: '36' } 
- 		]
 
 
  	MongoClient.connect(url, { useNewUrlParser: true ,useUnifiedTopology: true }, (err, db) => {
