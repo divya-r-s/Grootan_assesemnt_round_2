@@ -24,7 +24,7 @@ app.get('/', function(req,res){
 app.post('/upload', function(req,res){
 
 
-console.log(req.body.user_input);
+
 
 
 });
@@ -37,7 +37,7 @@ server.listen(3000, function () {
  let MongoClient = require('mongodb').MongoClient;
  let url = "mongodb://localhost:27017/";
 
- const csvFilePath='50000 Records.csv'
+const csvFilePath = req.body.user_input;
  const csv=require('csvtojson')
 
  csv()
